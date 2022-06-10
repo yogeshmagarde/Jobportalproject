@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      #header
+      {
+         text-align: ;
+         color: white;
+         height:pink;
+         width:100%;
+         background-color:black;
+         text-decoration: none;
+
+         
+      }
+    
+        #middel
+        {
+           text-align: ;
+           color: white;
+           height:pink;
+           width:100%;
+           background-color:black;
+           
+        }
+
+      </style>
+
+</head>
+<body>
+    <center>
+      <div id="header">
+        <a href="show"><font color="white" font size="4">check Resume</font></a></pre>
+        <form action="insertjob" method="post">
+            {% csrf_token %}
+            <input type="text" name="txtt" placeholder="jobtitle" required/><br><br>
+            <input type="text" name="txtd" placeholder="jobdiscription" required/><br><br>
+            <input type="text" name="txte" placeholder="experince" required/><br><br>
+            <input type="text" name="txtte" placeholder="technology"required /><br><br>
+            <input type="text" name="txtp" placeholder="postdate" required/><br><br>
+            <input type="text" name="txtdu" placeholder="duedate" required/><br><br>
+            <input type="submit"name="btnsubmit" value="insert"/>
+            <br><br>
+        </form>
+      
+</div>
+    </center>
+</body>
+</html>
